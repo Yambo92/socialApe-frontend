@@ -14,6 +14,9 @@ export default {
       },
     },
     spreadThis: {
+      primaryColor: {
+        color:'#00bcd4'
+      },
       form: {
         textAlign: "center",
       },
@@ -38,6 +41,60 @@ export default {
       customError: {
         color: "red",
         fontSize: "0.8rem",
+      },
+      invisibleSeparator: {
+        border: 'none',
+        margin: 4
+      },
+      visibleSeparator: {
+        width: '100%',
+        borderBottom: '1px solid rgba(0,0,0,0.1)',
+        marginBottom: 20
+      },
+      paper: {
+        padding: 20
+      },
+      buttons:{
+        textAlign: "center",
+        display: "flex",
+        justifyContent: "space-evenly"
+      },
+      profile: {
+        '& .image-wrapper': {
+          textAlign: 'center',
+          position: 'relative',
+          '& button': {
+            position: 'absolute',
+            top: '80%',
+            left: '70%'
+          }
+        },
+        '& .profile-image': {
+          width: 125,
+          height: 125,
+          objectFit: 'cover',
+          maxWidth: '100%',
+          borderRadius: '50%'
+        },
+        '& .profile-details': {
+          textAlign: 'center',
+          paddingBottom: 20,
+          '& span, svg': {
+            verticalAlign: 'middle'
+          },
+          '& a': {
+            color: '#00bcd4'
+          }
+        },
+        '& hr': {
+          border: 'none',
+          margin: '0 0 10px 0'
+        },
+        '& svg.button': {
+          '&:hover': {
+            cursor: 'pointer'
+          }
+        }
       },
     }
    
